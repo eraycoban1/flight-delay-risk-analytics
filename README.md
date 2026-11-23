@@ -83,7 +83,6 @@ flight-delay-risk-analytics/
 └── requirements.txt
 
 
----## How to Architecture 
 # 1. Create and activate virtual environment
 python -m venv .venv
 source .venv/Scripts/activate  # Linux/macOS: source .venv/bin/activate
