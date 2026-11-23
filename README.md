@@ -81,6 +81,7 @@ flight-delay-risk-analytics/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 
 # 1. Create and activate virtual environment
