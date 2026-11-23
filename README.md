@@ -87,23 +87,33 @@ flight-delay-risk-analytics/
 
 ## How to Reproduce
 
+**1. Create and activate virtual environment:**
 ```bash
-# 1. Create and activate virtual environment
 python -m venv .venv
 source .venv/Scripts/activate  # Linux/macOS: source .venv/bin/activate
+```
 
-# 2. Install dependencies
+**2. Install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
-# 3. Build leak-free Parquet dataset from raw BTS .asc files
+**3. Build leak-free Parquet dataset from raw BTS .asc files:**
+```bash
 python src/build_dataset.py
+```
 
-# 4. Run statistical hypothesis tests, VIF diagnostics, and EDA plots
+**4. Run statistical hypothesis tests, VIF diagnostics, and EDA plots:**
+```bash
 python src/eda_analysis.py
+```
 
-# 5. Train models, tune LightGBM via Optuna, and generate SHAP & Error Analysis
+**5. Train models, tune LightGBM via Optuna, and generate SHAP & Error Analysis:**
+```bash
 python src/train_model.py
+```
 
-# 6. Evaluate generalization on unseen Out-of-Time data (Jul-Aug 2026)
+**6. Evaluate generalization on unseen Out-of-Time data (Jul-Aug 2026):**
+```bash
 python src/evaluate.py
 ```
