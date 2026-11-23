@@ -83,7 +83,11 @@ flight-delay-risk-analytics/
 └── requirements.txt
 ```
 
+---
 
+## How to Reproduce
+
+```bash
 # 1. Create and activate virtual environment
 python -m venv .venv
 source .venv/Scripts/activate  # Linux/macOS: source .venv/bin/activate
@@ -102,3 +106,4 @@ python src/train_model.py
 
 # 6. Evaluate generalization on unseen Out-of-Time data (Jul-Aug 2026)
 python src/evaluate.py
+```
