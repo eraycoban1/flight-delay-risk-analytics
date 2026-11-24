@@ -16,7 +16,7 @@ data/processed/*
 !data/processed/.gitkeep
 data/oot/*
 !data/oot/.gitkeep
-models/*.joblib
+
 
 # IDE & OS specific files
 .vscode/

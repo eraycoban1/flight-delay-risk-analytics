@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    container_name: flight-delay-api
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  dashboard:
+    build: .
+    container_name: flight-delay-radar
+    ports:
+      - "8501:8501"
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    depends_on:
+      - api
